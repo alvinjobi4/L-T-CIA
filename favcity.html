@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Favorite City: Cochin</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<style>
+		body {
+			background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+			min-height: 100vh;
+			font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+		}
+		h1 {
+			color: #1a237e;
+			font-weight: 800;
+			letter-spacing: 2px;
+			text-shadow: 0 2px 12px #c2e9fb;
+		}
+		h2 {
+			color: #3949ab;
+			font-weight: 700;
+			margin-bottom: 1.2rem;
+		}
+		.section {
+			background: linear-gradient(120deg, #fff 80%, #e3f2fd 100%);
+			border-radius: 20px;
+			box-shadow: 0 8px 32px rgba(33, 150, 243, 0.12);
+			margin-bottom: 2.5rem;
+			padding: 2.5rem 2rem;
+			transition: box-shadow 0.3s, transform 0.3s;
+		}
+		.section:hover {
+			box-shadow: 0 16px 48px rgba(33, 150, 243, 0.18);
+			transform: translateY(-2px) scale(1.01);
+		}
+		.attraction-img {
+			width: 100%;
+			border-radius: 14px;
+			margin-bottom: 1rem;
+			box-shadow: 0 2px 12px #a1c4fd55;
+			transition: box-shadow 0.3s, transform 0.3s;
+		}
+		.attraction-img:hover {
+			box-shadow: 0 8px 32px #3949ab33;
+			transform: scale(1.04);
+		}
+		.restaurant-card {
+			border-radius: 14px;
+			box-shadow: 0 2px 12px #a1c4fd55;
+			background: linear-gradient(100deg, #fff 80%, #e3f2fd 100%);
+			transition: box-shadow 0.3s, transform 0.3s;
+		}
+		.restaurant-card:hover {
+			box-shadow: 0 8px 32px #a1c4fd99;
+			transform: scale(1.03);
+		}
+		.event-badge {
+			background: linear-gradient(90deg, #a1c4fd 60%, #c2e9fb 100%);
+			color: #3949ab;
+			font-weight: 700;
+			font-size: 1rem;
+			margin: 0.2rem 0.5rem 0.2rem 0;
+			padding: 0.5em 1em;
+			border-radius: 8px;
+			box-shadow: 0 2px 8px #a1c4fd33;
+		}
+		#activitySelect {
+			font-size: 1.1rem;
+			border-radius: 8px;
+			box-shadow: 0 2px 8px #c2e9fb33;
+		}
+		#activityImage img {
+			border: 3px solid #a1c4fd;
+			box-shadow: 0 4px 24px #3949ab22;
+		}
+		ul, li {
+			font-size: 1.08rem;
+		}
+		@media (max-width: 600px) {
+			.section { padding: 1rem; }
+			h1 { font-size: 2rem; }
+			h2 { font-size: 1.2rem; }
+		}
+	</style>
+</head>
+<body>
+	<div class="container py-4">
+	<h1 class="mb-4 text-center">Discover Cochin</h1>
+		<!-- Introduction -->
+		<div class="section">
+			<h2>Introduction</h2>
+			<p>Cochin (Kochi), the Queen of the Arabian Sea, is a vibrant port city in Kerala, India. Known for its rich history, diverse culture, and scenic beauty, Cochin blends colonial architecture, backwaters, and modern city life.</p>
+			<ul>
+				<li>Population: ~2.1 million</li>
+				<li>Language: Malayalam, English</li>
+				<li>Currency: Indian Rupee (₹)</li>
+			</ul>
+		</div>
+		<!-- Attractions -->
+		<div class="section">
+			<h2>Popular Attractions</h2>
+			<div class="row g-4">
+				<div class="col-md-4">
+					<img src="images/fort.jpeg" class="attraction-img" alt="Fort Kochi Beach">
+					<h5>Fort Kochi Beach</h5>
+					<p>Historic beach famous for Chinese fishing nets and colonial buildings.</p>
+				</div>
+				<div class="col-md-4">
+					<img src="images/palace.jpeg" class="attraction-img" alt="Mattancherry Palace">
+					<h5>Mattancherry Palace</h5>
+					<p>Portuguese palace with Kerala murals and royal artifacts.</p>
+				</div>
+				<div class="col-md-4">
+					<img src="images/jews.jpeg" class="attraction-img" alt="Jewish Synagogue">
+					<h5>Jewish Synagogue</h5>
+					<p>Oldest active synagogue in the Commonwealth, built in 1568.</p>
+				</div>
+			</div>
+			<div class="mt-4">
+				<iframe src="https://www.openstreetmap.org/export/embed.html?bbox=76.233%2C9.963%2C76.267%2C9.987&amp;layer=mapnik" style="width:100%;height:300px;border-radius:10px;border:none;"></iframe>
+			</div>
+		</div>
+		<!-- Restaurants and Cafes -->
+		<div class="section">
+			<h2>Best Restaurants & Cafes</h2>
+			<div class="row g-3">
+				<div class="col-md-6">
+					<div class="card restaurant-card p-3">
+						<h5><a href="https://www.google.com/maps/search/?api=1&query=Kashi+Art+Cafe+Fort+Kochi" target="_blank" class="btn btn-outline-primary btn-sm restaurant-link">Kashi Art Cafe</a></h5>
+						<p>Cuisine: Continental, Cafe | Rating: 4.6 | Location: Fort Kochi</p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="card restaurant-card p-3">
+						<h5><a href="https://www.google.com/maps/search/?api=1&query=Dhe+Puttu+Edappally" target="_blank" class="btn btn-outline-primary btn-sm restaurant-link">Dhe Puttu</a></h5>
+						<p>Cuisine: Kerala, South Indian | Rating: 4.5 | Location: Edappally</p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="card restaurant-card p-3">
+						<h5><a href="https://www.google.com/maps/search/?api=1&query=Ginger+House+Restaurant+Mattancherry" target="_blank" class="btn btn-outline-primary btn-sm restaurant-link">Ginger House Restaurant</a></h5>
+						<p>Cuisine: Indian, Seafood | Rating: 4.7 | Location: Mattancherry</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Things to Do -->
+		<div class="section">
+			<h2>Things to Do</h2>
+			<div class="mb-3">
+				<label for="activitySelect" class="form-label">Select an Activity</label>
+				<select class="form-select" id="activitySelect">
+					<option value="">Choose...</option>
+					<option value="houseboat">Houseboat Ride in Backwaters</option>
+					<option value="marine">Explore Marine Drive Promenade</option>
+					<option value="lulu">Visit Lulu Mall for Shopping</option>
+					<option value="kathakali">Watch Kathakali Performances</option>
+					<option value="cherai">Relax at Cherai Beach</option>
+				</select>
+			</div>
+			<div id="activityImage" class="mt-3"></div>
+		</div>
+		<script>
+		const activityImages = {
+			houseboat: {
+				src: "images/houseboat.jpeg",
+				alt: "Houseboat Ride in Backwaters"
+			},
+			marine: {
+				src: "images/marine.jpeg",
+				alt: "Marine Drive Promenade"
+			},
+			lulu: {
+				src: "images/lulu.jpeg",
+				alt: "Lulu Mall Shopping"
+			},
+			kathakali: {
+				src: "images/kath.jpeg",
+				alt: "Kathakali Performance"
+			},
+			cherai: {
+				src: "images/cherai.jpg",
+				alt: "Cherai Beach"
+			}
+		};
+		$('#activitySelect').change(function() {
+			let val = $(this).val();
+			if(activityImages[val]) {
+				let img = activityImages[val];
+				$('#activityImage').html(`<img src="${img.src}" alt="${img.alt}" class="attraction-img" style="max-width:400px"><div class="mt-2">${img.alt}</div>`);
+			} else {
+				$('#activityImage').html("");
+			}
+		});
+		</script>
+		<!-- Local Events -->
+		<div class="section">
+			<h2>Local Events</h2>
+			<span class="badge event-badge">Cochin Carnival - December/January</span>
+			<span class="badge event-badge">Biennale Art Festival - December-March</span>
+			<span class="badge event-badge">Onam Festival - August/September</span>
+			<span class="badge event-badge">Indira Gandhi Boat Race - December</span>
+		</div>
+		<!-- Contact Information -->
+		<div class="section">
+			<h2>Contact Information</h2>
+			<p>For local tours or hotel bookings:</p>
+			<ul>
+				<li>Email: info@cochintours.com</li>
+				<li>Phone: +91 484 1234567</li>
+				<li>Website: <a href="https://www.kochitourism.org/" target="_blank">Kochi Tourism</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
